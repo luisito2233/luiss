@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Inspirado en Instagram</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 350px;
+            width: 100%;
+            background: #fff;
+            border: 1px solid #dbdbdb;
+            padding: 40px;
+            text-align: center;
+        }
+        .container img {
+            margin-bottom: 20px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background: #fafafa;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 3px;
+            background-color: #3897f0;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .separator {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .separator::before, .separator::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #dbdbdb;
+        }
+        .separator::before {
+            margin-right: 10px;
+        }
+        .separator::after {
+            margin-left: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .footer a {
+            color: #00376b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" width="100">
+        <form>
+            <input type="text" class="input-field" placeholder="Teléfono, usuario o correo electrónico" required>
+            <input type="password" class="input-field" placeholder="Contraseña" required>
+            <button type="submit" class="login-button">Iniciar sesión</button>
+        </form>
+        <div class="separator">O</div>
+        <button class="login-button" style="background-color: #4267B2;">Iniciar sesión con Facebook</button>
+        <div class="footer">
+            <p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+        </div>
+    </div>
+</body>
+</html>
